@@ -3,9 +3,7 @@ import path from 'path';
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   distDir: 'dist',
-  experimental: {
-    turboMode: true, 
-  },
+
   webpack: (config:any) => {
 
     config.resolve.alias = {
