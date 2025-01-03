@@ -1,9 +1,9 @@
-import Content from "../_components/Content/Content";
-import SecNavbar from "../_components/SecNavbar/SecNavbar";
-import SideAndNavBar from "../_components/side&navBar/SideAndNavBar";
+import Content from "@/app/_components/Content/Content";
+import SecNavbar from "@/app/_components/SecNavbar/SecNavbar";
+import SideAndNavBar from "@/app/_components/side&navBar/SideAndNavBar";
 
 import initTranslations from "../i18n";
-import TranslationsProvider from "./../_components/TranslationsProvider";
+import TranslationsProvider from "@/app/_components/TranslationsProvider";
 
 type Props = {
   params: {
