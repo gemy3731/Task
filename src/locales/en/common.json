@@ -1,3 +1,5 @@
 {
-    "welcome":"Hello"
+    "secNavbar_btn":"Orders",
+        "secNavbar_btn_customer":"Customers",
+    "secNavbar_btn_product":"Products"
 }

@@ -18,7 +18,7 @@ export default async function Home({ params: { locale } }: Props) {
   return (
     <>
       <TranslationsProvider
-        namespaces={["sidebar"]}
+        namespaces={["sidebar","common"]}
         locale={locale}
         resources={resources}
       >
