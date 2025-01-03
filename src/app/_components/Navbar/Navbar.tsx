@@ -2,7 +2,7 @@
 import avatar_img from "@/app/assets/avatar.png"
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
-import SideBar from "../SideBar/SideBar";
+import SideBar from "@/app/_components/SideBar/SideBar";
 
 export default function NavBar({isMedium}:{isMedium:boolean}) {
   const [isOpen, setIsOpen] = useState<boolean>(false)
