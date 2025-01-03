@@ -1,7 +1,8 @@
 'use client'
 import { useEffect, useState } from "react";
-import SideBar from "../SideBar/SideBar";
-import NavBar from "../Navbar/NavBar";
+import SideBar from "@/app/_components/SideBar/SideBar";
+import NavBar from "@/app/_components/NavBar/NavBar";
+
 
 export default function SideAndNavBar() {
   const [isMedium, setIsMedium] = useState<boolean>(window.innerWidth <= 768);
