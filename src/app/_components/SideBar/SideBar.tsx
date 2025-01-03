@@ -1,27 +1,29 @@
+'use client'
 import Link from "next/link";
-import initTranslations from "../../i18n";
 import { CiHome } from "react-icons/ci";
 import { FaTshirt } from "react-icons/fa";
 import avatar_img from "@/app/assets/avatar.png"
 import sideBar_img from "@/app/assets/sidebarImg.webp"
 import Image from "next/image";
 import { GoShareAndroid } from "react-icons/go";
+import initTranslations from "@/app/i18n";
+import { useTranslation } from "react-i18next";
 type Props = {
   params?: {
     locale?: string;
   };
 };
 
-export default async function SideBar({ params: { locale } = {} }: Props) {
-  const { t } = await initTranslations(locale, ["sidebar"]);
+export default  function SideBar({ params: { locale } = {} }: Props) {
+  const { t } = useTranslation()
 
   return (
     <aside
       id="default-sidebar"
-      className="fixed top-0 right-0 z-40 w-64 h-screen hidden md:block"
+      className="z-40 h-screen w-[300px] fixed start-0 top-[72px] md:top-[0] md:block md:w-auto bg-[#00414d]"
       aria-label="Sidebar"
     >
-      <div className="h-full px-3 py-4 overflow-y-auto bg-[#00414d] text-white">
+      <div className="h-full px-3 py-4 overflow-y-auto  text-white ">
       <a href="https://flowbite.com/" className="flex items-center space-x-3 rtl:space-x-reverse py-[20px] px-[18px]">
         <img src="https://cdn.salla.network/images/logo/logo-light-wide.svg" className="h-8" alt="Flowbite Logo" />
     </a>
@@ -37,7 +39,7 @@ export default async function SideBar({ params: { locale } = {} }: Props) {
           <li>
             <Link
               href="#"
-              className="flex items-center p-2 rounded-lg text-white hover:bg-gray-100 group"
+              className="flex items-center p-2 rounded-lg text-white hover:bg-[#003c47] group"
             >
               <span className="flex-1 ms-3 whitespace-nowrap flex items-center gap-3">
               <CiHome  className="text-[22px]"/> {t("sidebar.main")} 
@@ -47,7 +49,7 @@ export default async function SideBar({ params: { locale } = {} }: Props) {
           <li>
             <Link
               href="#"
-              className="flex items-center p-2 rounded-lg text-white hover:bg-gray-100 group"
+              className="flex items-center p-2 rounded-lg text-white hover:bg-[#003c47] group"
             >
               <span className="flex-1 ms-3 whitespace-nowrap flex items-center gap-3">
               <FaTshirt  className="text-[22px]"/> {t("sidebar.products")} 
@@ -57,7 +59,7 @@ export default async function SideBar({ params: { locale } = {} }: Props) {
           <li>
             <Link
               href="#"
-              className="flex items-center p-2 rounded-lg text-white hover:bg-gray-100 group"
+              className="flex items-center p-2 rounded-lg text-white hover:bg-[#003c47] group"
             >
               <span className="flex-1 ms-3 whitespace-nowrap flex items-center gap-3">
               <FaTshirt  className="text-[22px]"/> {t("sidebar.orders")} 
@@ -67,7 +69,7 @@ export default async function SideBar({ params: { locale } = {} }: Props) {
           <li>
             <Link
               href="#"
-              className="flex items-center p-2 rounded-lg text-white hover:bg-gray-100 group"
+              className="flex items-center p-2 rounded-lg text-white hover:bg-[#003c47] group"
             >
               <span className="flex-1 ms-3 whitespace-nowrap flex items-center gap-3">
               <FaTshirt  className="text-[22px]"/> {t("sidebar.customers")} 
@@ -77,7 +79,7 @@ export default async function SideBar({ params: { locale } = {} }: Props) {
           <li>
             <Link
               href="#"
-              className="flex items-center p-2 rounded-lg text-white hover:bg-gray-100 group"
+              className="flex items-center p-2 rounded-lg text-white hover:bg-[#003c47] group"
             >
               <span className="flex-1 ms-3 whitespace-nowrap flex items-center gap-3">
               <FaTshirt  className="text-[22px]"/> {t("sidebar.reports")} 
@@ -87,7 +89,7 @@ export default async function SideBar({ params: { locale } = {} }: Props) {
           <li>
             <Link
               href="#"
-              className="flex items-center p-2 rounded-lg text-white hover:bg-gray-100 group"
+              className="flex items-center p-2 rounded-lg text-white hover:bg-[#003c47] group"
             >
               <span className="flex-1 ms-3 whitespace-nowrap flex items-center gap-3">
               <FaTshirt  className="text-[22px]"/> {t("sidebar.questions")} 
@@ -97,7 +99,7 @@ export default async function SideBar({ params: { locale } = {} }: Props) {
           <li>
             <Link
               href="#"
-              className="flex items-center p-2 rounded-lg text-white hover:bg-gray-100 group"
+              className="flex items-center p-2 rounded-lg text-white hover:bg-[#003c47] group"
             >
               <span className="flex-1 ms-3 whitespace-nowrap flex items-center gap-3">
               <FaTshirt  className="text-[22px]"/> {t("sidebar.identification")} 
@@ -107,7 +109,7 @@ export default async function SideBar({ params: { locale } = {} }: Props) {
           <li>
             <Link
               href="#"
-              className="flex items-center p-2 rounded-lg text-white hover:bg-gray-100 group"
+              className="flex items-center p-2 rounded-lg text-white hover:bg-[#003c47] group"
             >
               <span className="flex-1 ms-3 whitespace-nowrap flex items-center gap-3">
               <FaTshirt  className="text-[22px]"/> {t("sidebar.marketing")} 
@@ -120,7 +122,7 @@ export default async function SideBar({ params: { locale } = {} }: Props) {
         <li>
             <Link
               href="#"
-              className="flex items-center p-2 rounded-lg text-white hover:bg-gray-100 group"
+              className="flex items-center p-2 rounded-lg text-white hover:bg-[#003c47] group"
             >
               <span className="flex-1 ms-3 whitespace-nowrap flex items-center gap-3">
               <FaTshirt  className="text-[22px]"/> {t("sidebar.local")} 
@@ -130,7 +132,7 @@ export default async function SideBar({ params: { locale } = {} }: Props) {
         <li>
             <Link
               href="#"
-              className="flex items-center p-2 rounded-lg text-white hover:bg-gray-100 group"
+              className="flex items-center p-2 rounded-lg text-white hover:bg-[#003c47] group"
             >
               <span className="flex-1 ms-3 whitespace-nowrap flex items-center gap-3">
               <FaTshirt  className="text-[22px]"/> {t("sidebar.cart")} 
@@ -143,7 +145,7 @@ export default async function SideBar({ params: { locale } = {} }: Props) {
           <li>
             <Link
               href="#"
-              className="flex items-center p-2 rounded-lg text-white hover:bg-gray-100 group"
+              className="flex items-center p-2 rounded-lg text-white hover:bg-[#003c47] group"
             >
               <span className="flex-1 ms-3 whitespace-nowrap flex items-center gap-3">
               <FaTshirt  className="text-[22px]"/> {t("sidebar.trader_services")} 
@@ -153,7 +155,7 @@ export default async function SideBar({ params: { locale } = {} }: Props) {
           <li>
             <Link
               href="#"
-              className="flex items-center p-2 rounded-lg text-white hover:bg-gray-100 group"
+              className="flex items-center p-2 rounded-lg text-white hover:bg-[#003c47] group"
             >
               <span className="flex-1 ms-3 whitespace-nowrap flex items-center gap-3">
               <FaTshirt  className="text-[22px]"/> {t("sidebar.settings_shop")} 
@@ -163,7 +165,7 @@ export default async function SideBar({ params: { locale } = {} }: Props) {
           <li>
             <Link
               href="#"
-              className="flex items-center p-2 rounded-lg text-white hover:bg-gray-100 group"
+              className="flex items-center p-2 rounded-lg text-white hover:bg-[#003c47] group"
             >
               <span className="flex-1 ms-3 whitespace-nowrap flex items-center gap-3">
               <FaTshirt  className="text-[22px]"/> {t("sidebar.wallet")} 
@@ -176,7 +178,7 @@ export default async function SideBar({ params: { locale } = {} }: Props) {
           <li>
             <Link
               href="#"
-              className="flex items-center p-2 rounded-lg text-white hover:bg-gray-100 group"
+              className="flex items-center p-2 rounded-lg text-white hover:bg-[#003c47] group"
             >
               <span className="flex-1 ms-3 whitespace-nowrap flex items-center gap-3">
               <FaTshirt  className="text-[22px]"/> {t("sidebar.themes")} 
@@ -186,7 +188,7 @@ export default async function SideBar({ params: { locale } = {} }: Props) {
           <li>
             <Link
               href="#"
-              className="flex items-center p-2 rounded-lg text-white hover:bg-gray-100 group"
+              className="flex items-center p-2 rounded-lg text-white hover:bg-[#003c47] group"
             >
               <span className="flex-1 ms-3 whitespace-nowrap flex items-center gap-3">
               <FaTshirt  className="text-[22px]"/> {t("sidebar.design")} 
@@ -196,7 +198,7 @@ export default async function SideBar({ params: { locale } = {} }: Props) {
           <li>
             <Link
               href="#"
-              className="flex items-center p-2 rounded-lg text-white hover:bg-gray-100 group"
+              className="flex items-center p-2 rounded-lg text-white hover:bg-[#003c47] group"
             >
               <span className="flex-1 ms-3 whitespace-nowrap flex items-center gap-3">
               <FaTshirt  className="text-[22px]"/> {t("sidebar.apps_maker")} 
@@ -209,7 +211,7 @@ export default async function SideBar({ params: { locale } = {} }: Props) {
           <li>
             <Link
               href="#"
-              className="flex items-center p-2 rounded-lg text-white hover:bg-gray-100 group"
+              className="flex items-center p-2 rounded-lg text-white hover:bg-[#003c47] group"
             >
               <span className="flex-1 ms-3 whitespace-nowrap flex items-center gap-3">
               <FaTshirt  className="text-[22px]"/> {t("sidebar.installed_apps")} 
@@ -219,7 +221,7 @@ export default async function SideBar({ params: { locale } = {} }: Props) {
           <li>
             <Link
               href="#"
-              className="flex items-center p-2 rounded-lg text-white hover:bg-gray-100 group"
+              className="flex items-center p-2 rounded-lg text-white hover:bg-[#003c47] group"
             >
               <span className="flex-1 ms-3 whitespace-nowrap flex items-center gap-3">
               <FaTshirt  className="text-[22px]"/> {t("sidebar.visit_shop_apps")} 
