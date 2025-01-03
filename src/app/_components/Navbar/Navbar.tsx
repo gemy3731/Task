@@ -30,7 +30,7 @@ export default function NavBar({isMedium}:{isMedium:boolean}) {
     <div className="rounded-full overflow-hidden">
       <Image src={avatar_img} alt="user avatar" width={30} height={30}></Image>
     </div>
-    <a href="https://flowbite.com/" className="flex items-center space-x-3 rtl:space-x-reverse">
+    <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
         <img src="https://cdn.salla.network/images/logo/logo-light-wide.svg" className="h-8" alt="Flowbite Logo" />
     </a>
     <button ref={btnRef} onClick={()=>{setIsOpen(!isOpen)}} data-collapse-toggle="navbar-default" type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden  focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400  dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
