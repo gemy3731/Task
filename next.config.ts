@@ -1,8 +1,6 @@
-import path from 'path';
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  distDir: 'dist',
+  distDir: '.next',
 };
 
 export default nextConfig;
