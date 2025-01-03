@@ -7,7 +7,9 @@ import { appWithTranslation } from 'next-i18next';
 
 function RootLayout({ children }:{children:any}) {
   return (
-    <html lang="en">
+    <html>
+      <head>
+      </head>
       <body>
         {children}
         </body>
