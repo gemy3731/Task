@@ -5,7 +5,6 @@ import { LuGift } from "react-icons/lu";
 import avatar_img from "@/app/assets/avatar.png";
 import Image from "next/image";
 import { FaMoon } from "react-icons/fa";
-import { useSearchParams } from "next/navigation";
 type Props = {
   params?: {
     locale?: string;
@@ -15,7 +14,6 @@ export default function SecNavbar({ params: { locale } = {} }: Props) {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [isMedium, setIsMedium] = useState<boolean>(window.innerWidth <= 768);
   const { t,i18n  } = useTranslation();
-  const [searchParams, setSearchParams] = useSearchParams()
   const [dropDown, setDropDown] = useState(t("common:secNavbar_btn"));
   const changeDropDown = (value: any) => {
     setDropDown(value);

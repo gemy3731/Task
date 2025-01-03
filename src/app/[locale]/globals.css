@@ -10,28 +10,3 @@ aside,#content{
 div[role="dialog"]>div>div{
   width: fit-content;
 }
-/* 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-} */
-/* .sideBar_img::after{
-  content: 'baba';
-  position: absolute;
-  top: 0;
-  padding: 10px;
-  z-index: 10;
-  font-size: 24px;
-  width: 100%;
-  left: 0;
-   right: 0;
-  background-color: yellow;
-} */
