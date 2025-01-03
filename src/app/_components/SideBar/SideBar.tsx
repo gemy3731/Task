@@ -20,7 +20,7 @@ export default  function SideBar({ params: { locale } = {} }: Props) {
   return (
     <aside
       id="default-sidebar"
-      className="z-40 h-screen w-[300px] fixed start-0 top-[72px] md:top-[0] md:block md:w-auto bg-[#00414d]"
+      className=" w-[300px] fixed start-0 top-[72px] md:top-[0] md:static md:block md:w-[260px] bg-[#00414d] overflow-hidden"
       aria-label="Sidebar"
     >
       <div className="h-full px-3 py-4 overflow-y-auto  text-white ">

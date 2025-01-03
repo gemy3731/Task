@@ -1,3 +1,4 @@
+import Content from "../_components/Content/Content";
 import SecNavbar from "../_components/SecNavbar/SecNavbar";
 import SideAndNavBar from "../_components/side&navBar/SideAndNavBar";
 
@@ -13,20 +14,22 @@ export default async function Home({ params: { locale } }: Props) {
   const { t, resources } = await initTranslations(locale, [
     "common",
     "sidebar",
+    "content"
   ]);
 
   return (
     <>
       <TranslationsProvider
-        namespaces={["sidebar","common"]}
+        namespaces={["sidebar","common","content"]}
         locale={locale}
         resources={resources}
       >
-        <div className="md:grid md:grid-cols-12 ">
-          <div className="md:col-span-10">
+        <div className="grid grid-cols-12 gap-10">
+          <div className="col-span-12 md:col-span-10">
             <SecNavbar/>
+            <Content/>
           </div>
-          <div className="md:col-span-2 md:ms-auto">
+          <div className="col-span-12 md:col-span-2 md:ms-auto md:static">
             <SideAndNavBar />
           </div>
         </div>

@@ -5,6 +5,7 @@ import { LuGift } from "react-icons/lu";
 import avatar_img from "@/app/assets/avatar.png";
 import Image from "next/image";
 import { FaMoon } from "react-icons/fa";
+import { useSearchParams } from "next/navigation";
 type Props = {
   params?: {
     locale?: string;
@@ -13,7 +14,8 @@ type Props = {
 export default function SecNavbar({ params: { locale } = {} }: Props) {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [isMedium, setIsMedium] = useState<boolean>(window.innerWidth <= 768);
-  const { t } = useTranslation();
+  const { t,i18n  } = useTranslation();
+  const [searchParams, setSearchParams] = useSearchParams()
   const [dropDown, setDropDown] = useState(t("common:secNavbar_btn"));
   const changeDropDown = (value: any) => {
     setDropDown(value);
@@ -30,7 +32,10 @@ export default function SecNavbar({ params: { locale } = {} }: Props) {
         window.removeEventListener("resize", handleResize);
       };
     }, []);
-
+    const toggleLanguage = () => {
+      const newLang = i18n.language === "en" ? "ar" : "en";
+      i18n.changeLanguage(newLang);
+    };
   return (
     <>
       <nav className=" container mx-auto mt-[72px] md:mt-[0]">
@@ -133,6 +138,7 @@ export default function SecNavbar({ params: { locale } = {} }: Props) {
                   placeholder="Search..."
                 />
               </li>
+              <button onClick={toggleLanguage} className="border border-gray-300 mx-3 py-1 px-2 rounded-md">{i18n.language === "en" ? "ar" : "en"}</button>
             </ul>
           </div>
         </div>

@@ -4,8 +4,11 @@
 *{
   box-sizing: border-box;
 }
-aside{
+aside,#content{
   direction: rtl;
+}
+div[role="dialog"]>div>div{
+  width: fit-content;
 }
 /* 
 @media (prefers-color-scheme: dark) {
