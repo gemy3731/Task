@@ -1,7 +1,8 @@
 'use client'
 import { useEffect, useState } from "react";
 import SideBar from "../SideBar/SideBar";
-import NavBar from '../NavBar/NavBar';
+import NavBar from "../Navbar/Navbar";
+
 
 
 
