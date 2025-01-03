@@ -1,7 +1,8 @@
 'use client'
 import { useEffect, useState } from "react";
-import SideBar from "@/app/_components/SideBar/SideBar";
-import NavBar from "@/app/_components/NavBar/NavBar";
+import SideBar from "../SideBar/SideBar";
+import NavBar from '../NavBar/NavBar';
+
 
 
 export default function SideAndNavBar() {
