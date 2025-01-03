@@ -6,13 +6,9 @@ import SideAndNavBar from "@/app/_components/side&navBar/SideAndNavBar";
 import initTranslations from "../i18n";
 import TranslationsProvider from "@/app/_components/TranslationsProvider";
 
-type PageProps  = {
-  params: {
-    locale: string; 
-  };
-};
 
-export default async function Home({ params: { locale } }: PageProps ) {
+
+export default async function Home({ params: { locale } } ) {
 
   const { resources } = await initTranslations(locale, [
     "common",
