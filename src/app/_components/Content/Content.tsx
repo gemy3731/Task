@@ -1,16 +1,12 @@
 "use client";
-import { Label, Modal } from "flowbite-react";
+
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { CiSettings } from "react-icons/ci";
 import { MdOutlineDoNotDisturbOn } from "react-icons/md";
 import { IoMdClose } from "react-icons/io";
-type Props = {
-  params?: {
-    locale?: string;
-  };
-};
-export default function Content({ params: { locale } = {} }: Props) {
+
+export default function Content() {
   const { t } = useTranslation();
   const [openModal, setOpenModal] = useState(false);
 

@@ -5,17 +5,13 @@ import { LuGift } from "react-icons/lu";
 import avatar_img from "@/app/assets/avatar.png";
 import Image from "next/image";
 import { FaMoon } from "react-icons/fa";
-type Props = {
-  params?: {
-    locale?: string;
-  };
-};
-export default function SecNavbar({ params: { locale } = {} }: Props) {
+
+export default function SecNavbar() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [isMedium, setIsMedium] = useState<boolean>(window.innerWidth <= 768);
   const { t,i18n  } = useTranslation();
   const [dropDown, setDropDown] = useState(t("common:secNavbar_btn"));
-  const changeDropDown = (value: any) => {
+  const changeDropDown = (value: string) => {
     setDropDown(value);
   };
   
@@ -71,7 +67,6 @@ export default function SecNavbar({ params: { locale } = {} }: Props) {
                   className="flex items-center justify-between w-full py-[6px] px-3 text-gray-900  md:w-auto border border-gray-300"
                 >
                   {dropDown}
-                  {/* {t('common:secNavbar_btn')} */}
                   <svg
                     className="w-2.5 h-2.5 ms-2.5"
                     aria-hidden="true"

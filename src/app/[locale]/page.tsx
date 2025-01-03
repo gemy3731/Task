@@ -11,7 +11,7 @@ type Props = {
   };
 };
 export default async function Home({ params: { locale } }: Props) {
-  const { t, resources } = await initTranslations(locale, [
+  const {  resources } = await initTranslations(locale, [
     "common",
     "sidebar",
     "content"

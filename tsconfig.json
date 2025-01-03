@@ -30,6 +30,6 @@
     ".next/types/**/*.ts",
     "dist/types/**/*.ts",
     "src/app/[locale]/(components)/TranslationsProvider.js"
-  ],
+, "src/app/[locale]/layout.jsx"  ],
   "exclude": ["node_modules",".next"]
 }

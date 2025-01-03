@@ -2,19 +2,13 @@
 import Link from "next/link";
 import { CiHome } from "react-icons/ci";
 import { FaTshirt } from "react-icons/fa";
-import avatar_img from "@/app/assets/avatar.png"
 import sideBar_img from "@/app/assets/sidebarImg.webp"
 import Image from "next/image";
 import { GoShareAndroid } from "react-icons/go";
-import initTranslations from "@/app/i18n";
 import { useTranslation } from "react-i18next";
-type Props = {
-  params?: {
-    locale?: string;
-  };
-};
 
-export default  function SideBar({ params: { locale } = {} }: Props) {
+
+export default  function SideBar() {
   const { t } = useTranslation()
 
   return (
