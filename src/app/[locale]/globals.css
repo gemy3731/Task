@@ -1,8 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-
+*{
+  box-sizing: border-box;
+}
+aside{
+  direction: rtl;
+}
 /* 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -15,4 +19,16 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+} */
+/* .sideBar_img::after{
+  content: 'baba';
+  position: absolute;
+  top: 0;
+  padding: 10px;
+  z-index: 10;
+  font-size: 24px;
+  width: 100%;
+  left: 0;
+   right: 0;
+  background-color: yellow;
 } */

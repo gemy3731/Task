@@ -1,0 +1,34 @@
+{
+    "sidebar":{
+        "special": "Special",
+        "visit_shop": "Visit The Shop",
+        "gift_shop": "Gift Shop",
+        "trader_app": "Trader App",
+        "visit_shop_apps": "Visit Shop Apps",
+        "installed_apps": "Installed Apps",
+        "shop_apps": "Shop Apps",
+        "apps_maker": "App Maker",
+        "design": "Shop Design",
+        "themes": "Themes Shop",
+        "shop_appearance": "Shop Appearance",
+        "wallet": "Wallet and bills",
+        "settings": "Settings",
+        "advertisments": "Marketing Settings",
+        "influencers": "Influencers",
+        "settings_shop": "Shop settings",
+        "trader_services": "Trader Services",
+        "helping_tools": "Helping Tools",
+        "cart": "Point Cart",
+        "local": "Local",
+        "sells": "Selling channels",
+        "marketing": "Marketing tools",
+        "identification": "Identification page",
+        "questions": "Questions and assessments",
+        "reports": "Reports",
+        "customers": "Customers",
+        "orders": "Orders",
+        "products": "Products",
+        "main": "Home"
+}
+    
+  }

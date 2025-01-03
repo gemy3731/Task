@@ -1,0 +1,33 @@
+{
+    "sidebar":{
+        "special": "سبيشل",
+        "visit_shop": "زيارة المتجر",
+        "gift_shop": "متجر الهدايا",
+        "trader_app": "تطبيق التاجر",
+        "visit_shop_apps": "زيارة متجر التطبيقات",
+        "installed_apps": "التطبيقات المثبتة",
+        "shop_apps": "متجر التطبيقات",
+        "apps_maker": "صانع التطبيقات",
+        "design": "تصميم المتجر",
+        "themes": " متجر الثيمات",
+        "shop_appearance": "مظهر المتجر",
+        "wallet": "المحفظة والفواتير ",
+        "settings": "الإعدادات",
+        "advertisments": "إعدادات تسويقية",
+        "influencers": "المؤثرون",
+        "settings_shop": "اعدادات المتجر",
+        "trader_services": "خدمات التاجر",
+        "helping_tools": "أدوات مساندة",
+        "cart": "سلة بوينت",
+        "local": "محلي",
+        "sells": "قنوات البيع",
+        "marketing": "الادوات التسويقية",
+        "identification": "الصفحة التعريفية",
+        "questions": "الأسئلة والتقييمات",
+        "reports": "التقارير",
+        "customers": "العملاء",
+        "orders": "الطلبات",
+        "products": "المنتجات",
+        "main": "الرئيسية"
+    }
+  }
