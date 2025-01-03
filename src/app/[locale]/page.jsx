@@ -1,14 +1,15 @@
-
-
 import Content from "@/app/_components/Content/Content";
 import SecNavbar from "@/app/_components/SecNavbar/SecNavbar";
 import SideAndNavBar from "@/app/_components/side&navBar/SideAndNavBar";
 import initTranslations from "../i18n";
 import TranslationsProvider from "@/app/_components/TranslationsProvider";
 
-
-
-export default async function Home({ params: { locale } } ) {
+export default async function Home({ params }) {
+  const { locale } = params || {};
+  
+  if (!locale) {
+    return <div>Error: Locale is missing!</div>;
+  }
 
   const { resources } = await initTranslations(locale, [
     "common",
